@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="cont-forms">
+        <form action="" class="iniciar-sesion" id="form-iniciar">
+            <img class="img-iniciar" src="/resources/acceso.png" alt="">
+            <div class="encabezado-form">
+                <h2 class="titulo-form">Iniciar sesión</h2>
+                <p class="desc-form">Por favor ingresa los datos para continuar</p>
+            </div>
+            <div class="cont-input">
+                <img class="icon-input" src="/resources/sobre.png" alt="">
+                <input class="input-form email-input" type="text" placeholder="Email" name="email">
+            </div>
+            <div class="cont-input">
+                <img class="icon-input" src="/resources/cerrar.png" alt="">
+                <input class="input-form" type="password" placeholder="Contraseña" name="password"> 
+                <img class="ver-pass invisible" src="/resources/ojos-cruzados.png" alt="">
+            </div>
+            <input type="submit" value="Iniciar sesión">
+            <a class="recordar-pass" href="">¿Olvidaste tu contraseña?</a>
+            <p>¿No tienes cuenta? <a class="a-sign-up" href="#form-crear"> Crear cuenta</a></p>
+        </form>
+        <form action="" class="crear-cuenta" id="form-crear">
+            <div class="encabezado-form">
+                <h2 class="titulo-form">Crear cuenta</h2>
+                <p class="desc-form">Por favor llena todos los campos correctamente</p>
+            </div>
+            <div class="cont-input">
+                <img class="icon-input" src="/resources/circulo-de-usuario.png" alt="">
+                <input class="input-form" type="text" placeholder="Nombre" name="name">
+            </div>
+            <div class="cont-input">
+                <img class="icon-input" src="/resources/telefono-inteligente.png" alt="">
+                <input class="input-form" type="number" placeholder="Número de teléfono" name="phone">
+            </div>
+            <div class="cont-input">
+                <img class="icon-input" src="/resources/sobre.png" alt="">
+                <input class="input-form email-input" type="text" placeholder="Email" name="email">
+            </div>
+            <div class="cont-input">
+                <img class="icon-input" src="/resources/cerrar.png" alt="">
+                <input class="input-form" type="password" placeholder="Contraseña" name="password">
+                <img class="ver-pass invisible" src="/resources/ojos-cruzados.png" alt="">
+            </div>
+            <div class="cont-input">
+                <img class="icon-input" src="/resources/cerrar.png" alt="">
+                <input class="input-form" type="password" placeholder="Confirmar contraseña" name="confirm_password">
+                <img class="ver-pass invisible" src="/resources/ojos-cruzados.png" alt="">
+            </div>
+            <input type="submit" value="Crear cuenta">
+            <p>¿Ya tienes una cuenta? <a class="a-sign-in" href="#form-iniciar"> Iniciar sesión</a></p>
+        </form>
+    </div>
+    <div class="cont-alerta inactivo">
+        <div class="alerta-iniciar inactivo">
+            <img src="resources/correcto.png" alt="">
+            <h4>Inicio de sesión correcto</h4>
+            <button class="cerrar-alerta">Aceptar</button>
+        </div>
+        <div class="alerta-crear inactivo">
+            <img src="resources/estrella.png" alt="">
+            <h4>Cuenta creada correctamente</h4>
+            <button class="cerrar-alerta">Aceptar</button>
+        </div>
+        <div class="alerta-error inactivo">
+            <img src="resources/error.png" alt="">
+            <h4>Los datos ingresados no son correctos</h4>
+            <button class="cerrar-alerta">Aceptar</button>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
